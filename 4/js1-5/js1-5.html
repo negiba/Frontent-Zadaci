@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="zdravoInner"></div>
+    <div id="zdravoTextContent"></div>
+    <div id="insert"></div>
+    <input type="text" name="" id="zdravoValue">
+    <script>
+        alert("Zdravo");
+        console.log("Zdravo");
+        document.getElementById("zdravoInner").innerHTML = "Zdravo - Inner HTML";
+        document.getElementById("zdravoValue").value = "Zdravo - Value";
+        document.getElementById("zdravoTextContent").textContent = "Zdravo - Text Content";
+        document.getElementById("insert").insertAdjacentText("afterbegin", "Zdravo - Insert Adjacent Text");
+    </script>
+</body>
+
+</html>

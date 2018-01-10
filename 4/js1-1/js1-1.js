@@ -1,0 +1,1 @@
+console.log("eksterni js fajl: Zdravo!")

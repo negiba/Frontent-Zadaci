@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let randomNumber = () => {
+            let random = Math.floor(Math.random() * 100);
+            if (random < 20) {
+                return "broj je mali";
+            }
+            else if (random > 90) {
+                return "broj je veliki";
+            } else {
+                return "broj je srednji";
+            }
+        }
+        console.log(randomNumber());
+    </script>
+</body>
+
+</html>

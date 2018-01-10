@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Eventi</title>
+    <style type="text/css">
+        body,
+        form {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        div,
+        textarea,
+        input {
+            width: 100px;
+            height: 100px;
+            flex-basis: 100px;
+            background: lightblue;
+            margin: 50px;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body onload="console.log('LOAD')">
+    <div title="LOAD">Pri učitavanju stranice</div>
+    <div title="KLIK" onclick="console.log('Kliknuto')">Na klik jednostruki</div>
+    <div title="DUPLI KLIK" ondblclick="console.log('Dupli klik')">Na dvostruki klik</div>
+    <div title="DESNI KLIK" oncontextmenu="console.log('Desni klik')">Na desni klik</div>
+    <div title="DUGME MIŠA PUŠTENO" onmouseup="console.log('Dugme misa pusteno')">Pri otpuštanju miša na gore</div>
+    <div title="DUGME MIŠA STISNUTO NA DOLE" onmousedown="console.log('Dugme misa pritisnuto')">Pri pretiskanju miša na dole</div>
+    <div title="PRELAZAK PREKO" onmouseover="console.log('Prelazak misem preko diva')">Pri prelasku preko diva</div>
+    <div title="ULAZAK" onmouseover="console.log('Ulazak u div')">Pri ulasku miša u div</div>
+    <div title="IZLAZAK" onmouseout="console.log('Izlazak misa iz diva')">Pri izlasku miša iz diva</div>
+    <div title="POMEREN MIŠ" onmousemove="console.log('Mis se pomera')">Pri pomeranju miša (kad vam proradi zakomentarišite)</div>
+    <form action="">
+        <textarea title="TASTER NA DOLE" onkeydown="console.log('Pritisnut taster na dole')">Pretiskanje tastera na dole</textarea>
+        <textarea title="TASTER NA GORE" onkeyup="console.log('Otpusten taster')">Otpuštanje tastera</textarea>
+        <textarea title="PRETISKANJE TASTERA" onkeypress="console.log('Pritisnut taster')">Pretiskanje tastera</textarea>
+        <textarea title="ULAZ" onfocus="console.log('Dobio fokus')">Ova textarea dobija fokus</textarea>
+        <textarea title="NAPUŠTANJE" onblur="console.log('Gubi fokus')">Ova textarea gubi fokus</textarea>
+        <div title="SLANJE FORME" onsubmit="alert('Slanje forme')">Pri slanju forme</div>
+        <div title="RESETOVANJE FORME" onreset="console.log('Resetovana forma')">Pri resetovanju forme</div>
+        <input title="PRI SLANJU FORME" type="submit" value="Pošalji">
+        <input type="reset" value="Resetuj">
+    </form>
+</body>
+
+</html>

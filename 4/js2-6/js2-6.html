@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let ugnjezdeneForPetlje = () => {
+            let parni = [],
+                neparni = [],
+                deljiviSa3 = [];
+            for (let petlja1 = 0; petlja1 < 100; petlja1++) {
+                if (petlja1 !== 0 && petlja1 % 2 == 0) {
+                    parni.push(petlja1);
+                }
+                for (let petlja2 = 0; petlja2 < petlja1; petlja2++) {                    
+                    if (petlja2 !== 0 && petlja2 % 2 == 1) {
+                        neparni.push(petlja2);
+                    }
+                    for (let petlja3 = 0; petlja3 < 100; petlja3++) {
+                        if (petlja1 !== 0 && petlja1 % 3 === 0) {
+                            deljiviSa3.push(petlja1);
+                        }
+                    }
+
+                }
+            }
+            // return parni;
+            return neparni;
+
+        }
+        console.log(ugnjezdeneForPetlje());
+    </script>
+</body>
+
+</html>
